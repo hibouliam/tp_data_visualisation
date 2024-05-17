@@ -107,7 +107,7 @@ function dailyEarthquake(earthquakeData) {
 function depthVsMagnitude(earthquakeData) {
     const trace = {
         x: earthquakeData.map(d => d.magnitude),
-        y: earthquakeData.map(d => d.coordinates[2]), // Depth is at index 2 of coordinates array
+        y: earthquakeData.map(d => d.coordinates[2]), 
         mode: 'markers',
         type: 'scatter',
         marker: {
